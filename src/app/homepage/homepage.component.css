@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgba(59, 89, 153, 1);
+  padding: 10px;
+  border-bottom: 1px solod rgba(206, 147, 216, 1);
+  display: flex;
+
+  width: 100%;
+}
+
+#appName {
+  color: rgba(0, 225, 255, 0.767);
+  margin: 0 auto;
+}
+
+.loadChild {
+  margin-left: 160px;
+}
+
+.logo {
+  margin-left: 33px;
+}
+
+logo:hover {
+  background-color: rgba(206, 147, 216, 1);
+}
+
+.sidebar {
+  background-color: rgba(59, 89, 153, 1);
+  position: absolute;
+  top: 74px;
+  height: 87vh;
+  width: 160px;
+}
+
+#button1 {
+  margin-top: 88px;
+}
+
+.sidebarButtons {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 11px 11px;
+  cursor: pointer;
+  width: 80%;
+  height: 35px;
+}

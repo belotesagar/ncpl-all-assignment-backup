@@ -1,0 +1,50 @@
+<div id="addProduct">
+  <h1>Add Book</h1>
+  <form #userForm="ngForm" (ngSubmit)=onAddProduct(userForm.value)>
+    <div class="form-group">
+      <input type="text" ngModel name="id" id="exampleInputPassword" #id="ngModel" required placeholder="Enter Id">
+      <small class="redError" *ngIf="id.invalid && id.touched" id="MsgPos">Id is Required</small>
+    </div>
+    <div class="form-group">
+      <input type="text" ngModel name="name" id="exampleInputPassword" #name="ngModel" required
+        placeholder="Enter Name">
+      <small class="redError" *ngIf="name.invalid && name.touched" id="MsgPos">name is Required</small>
+    </div>
+    <div class="form-group">
+      <input type="text" ngModel name="autherName" id="exampleInputPassword" #autherName="ngModel" required
+        placeholder="Enter autherName">
+      <small class="redError" *ngIf="autherName.invalid && autherName.touched" id="MsgPos">autherName is
+        Required</small>
+    </div>
+    <div class="form-group">
+      <input type="text" ngModel name="price" id="exampleInputPassword" #price="ngModel" required
+        placeholder="Enter price">
+      <small class="redError" *ngIf="price.invalid && price.touched" id="MsgPos">price is Required</small>
+    </div>
+    <div class="form-group">
+      <input type="text" ngModel name="language" id="exampleInputPassword" #language="ngModel" required
+        placeholder="Enter language">
+      <small class="redError" *ngIf="language.invalid && language.touched" id="MsgPos">language is Required</small>
+    </div>
+    <button type="submit" id="submitButton" class="btn btn-primary"> {{editMode? 'Update Book':'Add Book'}}</button>
+  </form>
+
+</div>
+<div id="tableDiv">
+  <h1>Inventory</h1>
+  <table>
+    <tr>
+      <th *ngFor="let column of headers">
+        {{column}}
+      </th>
+    </tr>
+
+    <tr *ngFor="let row of booksData ; index as i">
+      <td *ngFor="let column of headers">
+        {{row[column]}}
+      </td>
+      <td><button (click)='editProduct(row.productId,i)'>Edit</button></td>
+      <td><button (click)='deleteProduct(i)'>Delete</button></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,19 @@
+<div id="container">
+  <h1>Cart</h1>
+  <hr>
+  <table>
+    <tr>
+      <th *ngFor="let column of headers">
+        {{column}}
+      </th>
+    </tr>
+    <tr *ngFor="let row of cartData ; index as i">
+      <td *ngFor="let column of headers">
+        {{row[column]}}
+      </td>
+      <td><button (click)='editQuantity(i)'>Edit Quantity </button></td>
+      <td><button (click)='deleteProduct(i)'>Delete </button></td>
+    </tr>
+  </table>
+  <h1>Total Cart Ammount:{{totalAmmount}}</h1>
+</div>

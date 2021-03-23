@@ -1,0 +1,104 @@
+#container {
+  border: 2px solid rebeccapurple;
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+#exampleInputUsername {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-width: 1px;
+
+}
+
+#exampleInputPassword {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-width: 1px;
+  margin-bottom: 17px;
+}
+
+#submitButton {
+  position: relative;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 28px;
+  top: 20px;
+  left: 108px;
+}
+
+.userData {
+  position: absolute;
+  background-color: chartreuse;
+  width: 313px;
+  height: 196px;
+  top: 168px;
+  right: 170px;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th {
+  height: 20px;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  text-align: left;
+  vertical-align: bottom;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+button {
+  background-color: rgb(45, 112, 236);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(13, 89, 231);
+}
