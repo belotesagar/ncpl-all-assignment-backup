@@ -1,0 +1,16 @@
+<h1>Employee Data</h1>
+
+
+<table>
+  <tr>
+    <th *ngFor="let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let row of employeeData">
+    <td *ngFor="let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+</table>
