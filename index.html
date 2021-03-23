@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library management</title>
+    <style>
+        #appName {
+            text-align: center;
+            color: rgb(11, 228, 58);
+        }
+
+        #product-section {
+            color: cadetblue;
+            padding: 2px;
+            position: fixed;
+            left: 200px;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        #inventry-section {
+            color: cadetblue;
+            padding: 2px;
+            position: fixed;
+            left: 200px;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        #cart-section {
+            color: cadetblue;
+            padding: 2px;
+            position: fixed;
+            left: 200px;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        .nav {
+            background-color: cadetblue;
+            padding: 25px;
+            position: fixed;
+            width: 141px;
+            height: 562px;
+            top: 0px;
+        }
+
+        #cart {
+
+            position: absolute;
+            left: -3px;
+            top: 292px;
+            background-color: mediumspringgreen;
+            color: black;
+            border: none;
+            font-size: 16px;
+            padding: 9px 71px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #inventory {
+
+            position: absolute;
+            left: -5px;
+            top: 204px;
+            background-color: mediumspringgreen;
+            border: none;
+            color: black;
+            padding: 9px 53px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #product {
+
+            position: absolute;
+            left: -3px;
+            top: 117px;
+            background-color: mediumspringgreen;
+            border: none;
+            color: black;
+            font-size: 14px;
+            padding: 9px 61px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        button {
+            margin-top: 20px;
+            line-height: 60px;
+            font-weight: bold;
+            padding: 0 35px;
+            background: salmon;
+            border: none;
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2 id="appName">Library Management</h2>
+            <button id="cart" onclick="addToCart();">Cart</button>
+            <button id="inventory" onclick="viewInventory();">Inventory</button>
+            <button id="product" onclick="viewProducts();">Product</button>
+        </div>
+        <div id="product-section">
+            <h1 id="ammount"></h1>
+        </div>
+        <div id="inventry-section">
+
+        </div>
+        <div id="cart-section">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+    <script src="library.js"></script>
+</body>
+
+</html>
