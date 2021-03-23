@@ -1,0 +1,27 @@
+<h1>template driven form example</h1>
+
+<form #userForm="ngForm" (ngSubmit)=onSubmit(userForm.value)>
+  <div class="form-group">
+    <input type="email" ngModel name="email" id="exampleInputUsername" #email="ngModel" required
+      placeholder="Enter email">
+    <small class="redError" *ngIf="email.invalid && email.touched" id="MsgPos">Email is
+      Required</small>
+  </div>
+  <div class="form-group">
+    <input type="password" ngModel name="password" id="exampleInputPassword" #password="ngModel" required
+      placeholder="Password">
+    <small class="redError" *ngIf="password.invalid && password.touched" id="MsgPos">password is
+      Required</small>
+  </div>
+  <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="userData">
+  <h3>Result</h3>
+  <ul>
+    <li *ngFor="let item of items">
+      <p>Email:{{item.email}}</p>
+      <p>Password:{{item.password}} </p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,251 @@
+h1 {
+  position: relative;
+}
+
+* {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* .container {} */
+
+.loginSection {
+  margin: 0px;
+}
+
+#logo {
+  text-align: center;
+}
+
+#login {
+
+  text-align: center;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.72);
+  margin-top: 10px;
+}
+
+.float-container {
+  text-align: center;
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.72);
+
+}
+
+.flex-child {
+  display: inline-block;
+  margin-right: 14px;
+
+}
+
+.row {
+  margin-left: 229px;
+  margin-right: 88px;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 200px;
+}
+
+.column {
+  float: left;
+  width: 41%;
+  padding: 10px;
+  height: 272px;
+}
+
+#inputUser {
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+  ;
+}
+
+#exampleInputUsername {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-width: 1px;
+
+}
+
+#exampleInputPassword {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-width: 1px;
+  margin-bottom: 17px;
+}
+
+#loginbutton {
+  position: relative;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 13px 66px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 28px;
+  top: 20px;
+  left: 108px;
+}
+
+.firstIcon {
+  display: inline-block;
+}
+
+#googleIcon {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+  left: 6px;
+
+}
+
+.usingGoogle {
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 251px;
+  margin-left: 36px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ededed;
+}
+
+#facebookIcon {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+  left: 6px;
+
+}
+
+.usingFacebook {
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 251px;
+  margin-left: 36px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ededed;
+}
+
+#guestIcon {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+  left: 6px;
+
+}
+
+.asGuest {
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 251px;
+  margin-left: 36px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ededed;
+}
+
+.remember {
+  cursor: pointer;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.52);
+  ;
+}
+
+#exampleCheck1 {
+  margin-left: 72px;
+  font-weight: 400;
+  position: relative;
+  top: -9pxpx;
+}
+
+#checkbox1 {
+
+  top: -9pxpx;
+}
+
+#forgotPass {
+  position: relative;
+  color: rgb(23, 135, 232);
+  top: -38px;
+  right: -247px;
+  cursor: pointer;
+}
+
+.smallNav {
+  position: relative;
+  top: 35px;
+  text-align: center;
+}
+
+.smallNavEle {
+  color: rgba(0, 0, 0, 0.52);
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#paragraph {
+  color: rgba(0, 0, 0, 0.52);
+  position: relative;
+  top: 15px;
+  text-align: center;
+  width: 500px;
+  left: 393px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#MsgPos {
+  position: relative;
+  top: 36px;
+  right: 273px;
+}
+
+input.ng-invalid {
+  border: 5px solid red;
+}
+
+input.ng-valid {
+  border: 5px solid green;
+}
+
+.redError {
+  color: red;
+
+}
+
+.userData {
+  position: absolute;
+  background-color: chartreuse;
+  width: 313px;
+  height: 196px;
+  top: 168px;
+  right: 170px;
+  text-align: center;
+}

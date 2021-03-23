@@ -1,0 +1,11 @@
+<div class="navbar">
+  <img title="clouds" (click)="showSideNav()" src="https://build.clouzerindia.com/assets/images/others/ic-clouds.svg"
+    class="logo" style="height: 46px;">
+</div>
+<div class="sidebar" *ngIf="showSideBar">
+    <button class="sidebarButtons">test</button>
+    <button class="sidebarButtons" (click)="loadOrganization()">organization</button>
+    <button class="sidebarButtons">calender</button> 
+</div>
+
+<!-- <router-outlet></router-outlet> -->

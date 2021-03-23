@@ -1,0 +1,64 @@
+<div class="container">
+  <div id="logo">
+    <img title="clouds" src="https://build.clouzerindia.com/assets/images/others/ic-clouds.svg"
+    class="" style="height: 46px;">
+  </div>
+  <div class="loginSection">
+    <h1 id="login">Log In</h1>
+    <div class="float-container">
+
+      <h1 class="flex-child">New to Clouzer?</h1>
+      <a href="#">
+        <h1 style="display: inline-block" class="flex-child">Sign Up</h1>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" id="inputUser">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="text" formControlName="Username" id="exampleInputUsername" placeholder="Username">
+          <small class="redError" *ngIf="username.invalid && username.touched" id="exampleInputUsername">Username is Required</small>
+        </div>
+        <div class="form-group">
+          <input type="password" formControlName="Password" id="exampleInputPassword" placeholder="Password">
+          <small class="redError" *ngIf="password.invalid && password.touched" id="exampleInputUsername">Password is Required</small>
+        </div>
+        <div class="form-group form-check">
+          <h5 id="checkbox1"><input type="checkbox" id="exampleCheck1">
+            <label class="remember" for="exampleCheck1">Remember me</label></h5>
+          <a>
+            <h5 id="forgotPass">Forgot Password?</h5>
+          </a>
+        </div>
+        <button type="submit" id="loginbutton">LOG IN</button>
+      </form>
+    </div>
+    <div class="column">
+      <div>
+        <div class="usingGoogle" style="height: 50px;"><img
+            src="https://build.clouzerindia.com/assets/images/others/google.png">
+          <h5 class="firstIcon" id="googleIcon">Continue with Google</h5>
+        </div>
+        <div class="usingFacebook" style="height: 50px;"><img
+            src="https://build.clouzerindia.com/assets/images/others/facebook.png">
+          <h5 class="firstIcon" id="facebookIcon">Continue with Facebook</h5>
+        </div>
+        <div class="asGuest" style="height: 50px;"><img
+            src="https://build.clouzerindia.com/assets/images/others/account.svg">
+          <h5 class="firstIcon" id="guestIcon">Continue with Guest</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="smallNav">
+    <a href=""><h5 class="smallNavEle">product Features</h5></a>
+    <a href=""><h5 class="smallNavEle">product Demo</h5></a>
+    <a href=""><h5 class="smallNavEle">About Us</h5></a>
+    <a href=""><h5 class="smallNavEle">Privacy Policy</h5></a>
+</div>
+<div id="paragraph">
+    <p>* By logging in,you agree to our Terms of Use and to receive Clouzer emails & Updates and acknowledge that you Read our Privacy Policy</p>
+</div>
+
+</div>

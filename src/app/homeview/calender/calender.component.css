@@ -1,0 +1,62 @@
+#exampleInputUsername {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-width: 1px;
+
+}
+
+#exampleInputPassword {
+  padding: 15px;
+  width: 251px;
+  margin-left: 74px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-width: 1px;
+  margin-bottom: 17px;
+}
+
+#submitButton {
+  position: relative;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 13px 66px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 28px;
+  top: 20px;
+  left: 108px;
+}
+
+input.ng-invalid {
+  border: 5px solid red;
+}
+
+input.ng-valid {
+  border: 5px solid green;
+}
+
+.redError {
+  color: red;
+  position: relative;
+  top: 33px;
+  left: -275px;
+
+}
+
+.userData {
+  position: absolute;
+  background-color: chartreuse;
+  width: 313px;
+  height: 196px;
+  top: 168px;
+  right: 170px;
+  text-align: center;
+}
