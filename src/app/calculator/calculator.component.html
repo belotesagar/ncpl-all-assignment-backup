@@ -1,0 +1,35 @@
+<div id="container">
+  <h1>Calculator</h1>
+  <table>
+    <tr>
+      <td colspan="3"><input type="text" [ngModel]="formattedTokens" readonly>
+        <input type="text" id="output" [ngModel]="input" readonly></td>
+      <!-- <td><button id="buttonAC" (click)="reset()">AC</button> </td> -->
+    </tr>
+    <tr>
+      <td> <button (click)="insertChar('1')">1</button> </td>
+      <td> <button (click)="insertChar('2')">2</button> </td>
+      <td> <button (click)="insertChar('3')">3</button> </td>
+      <td> <button (click)="execOperator('/')">/</button> </td>
+    </tr>
+    <tr>
+      <td> <button (click)="insertChar('4')">4</button> </td>
+      <td> <button (click)="insertChar('5')">5</button> </td>
+      <td> <button (click)="insertChar('6')">6</button> </td>
+      <td> <button (click)="execOperator('-')">-</button> </td>
+    </tr>
+    <tr>
+      <td> <button (click)="insertChar('7')">7</button> </td>
+      <td> <button (click)="insertChar('8')">8</button> </td>
+      <td> <button (click)="insertChar('9')">9</button> </td>
+      <td> <button (click)="execOperator('+')">+</button> </td>
+    </tr>
+    <tr>
+      <!-- <td> <button (click)="insertChar('.')">,</button> </td> -->
+      <td> <button (click)="reset()">C</button> </td>
+      <td> <button (click)="insertChar('0')">0</button> </td>
+      <td> <button (click)="evaluate()">=</button> </td>
+      <td> <button (click)="execOperator('*')">x</button> </td>
+    </tr>
+  </table>
+</div>
